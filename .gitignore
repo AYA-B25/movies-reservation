@@ -15,8 +15,8 @@ dist-ssr/
 .env.*
 !.env.example
 
-# ===== Docker (à décommenter si tu utilises un bind mount pour MySQL) =====
-# mysql-data/
+# ===== Docker =====
+mysql-data/
 
 # ===== Logs =====
 *.log
@@ -30,6 +30,7 @@ pnpm-debug.log*
 *.iws
 *.ipr
 *.iml
+out/
 
 # ===== IDE : VS Code (on garde extensions.json partagé) =====
 .vscode/*
