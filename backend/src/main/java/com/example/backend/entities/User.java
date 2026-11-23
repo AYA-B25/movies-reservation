@@ -20,7 +20,7 @@ public class User {
     private String email;
 
     @Column(nullable=false)
-    private String password;
+    private String passwordHash;
 
     @Column(nullable=false)
     @Size(min = 2, max=100)
@@ -32,7 +32,7 @@ public class User {
 
     @Enumerated(value = EnumType.STRING)
     @Column(nullable = false)
-    private Role role;
+    private Role role= Role.USER;
 
     @CreationTimestamp
     @Column(updatable = false)
